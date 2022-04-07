@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block calculadora %}
+
+<form action="" name="calc_simples">
+    <div id="calculadora-simples">
+        <input type="text" id="visor_simples" name="visor_simples">
+        <div>
+            <input type="button" value="C" class="botao" onclick="limpar()">
+            <input type="button" value="()" class="botao" onclick="desabilitado()">
+            <input type="button" value="%" class="botao" onclick="desabilitado()">
+            <input type="button" value="/" class="botao" onclick="botao(value)">
+        </div>
+        <div>
+            <input type="button" value="7" class="botao" onclick="botao(value)">
+            <input type="button" value="8" class="botao" onclick="botao(value)">
+            <input type="button" value="9" class="botao" onclick="botao(value)">
+            <input type="button" value="*" class="botao" onclick="botao(value)">
+        </div>
+        <div>
+            <input type="button" value="4" class="botao" onclick="botao(value)">
+            <input type="button" value="5" class="botao" onclick="botao(value)">
+            <input type="button" value="6" class="botao" onclick="botao(value)">
+            <input type="button" value="-" class="botao" onclick="botao(value)">
+        </div>
+        <div>
+            <input type="button" value="1" class="botao" onclick="botao(value)">
+            <input type="button" value="2" class="botao" onclick="botao(value)">
+            <input type="button" value="3" class="botao" onclick="botao(value)">
+            <input type="button" value="+" class="botao" onclick="botao(value)">
+        </div>
+        <div>
+            <input type="button" value="+/-" class="botao" onclick="desabilitado()">
+            <input type="button" value="0" class="botao" onclick="botao(value)">
+            <input type="button" value="." class="botao" onclick="botao(value)">
+            <input type="button" value="=" class="botao" onclick="calcular()">
+        </div>
+    </div>
+</form>
+
+{% endblock %}

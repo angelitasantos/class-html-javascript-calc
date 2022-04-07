@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}Calculadora{% endblock %}</title>
+    <link rel="icon" href="/static/img/logo.png">
+    <link rel="stylesheet" text="text/css" href="/static/css/styles.css">
+</head>
+
+<body>
+
+    <h1 id="calculadora"></h1>
+
+    <div>
+        <button id="simples"></button>
+    </div>
+
+    <div>
+        <button class="desabilitado" id="cientifica" onclick="desabilitado()"></button>
+        <button class="desabilitado" id="financeira" onclick="desabilitado()"></button>
+    </div>
+
+    {% block calculadora %}
+    {% endblock %}
+
+    <script type="text/javascript" src="/static/js/script.js"></script>
+</body>
+
+</html>
